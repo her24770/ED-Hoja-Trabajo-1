@@ -1,5 +1,5 @@
 
-public class Blender {
+public class Blender implements IBlender{
 
     private boolean full;
     private int speed;
@@ -9,22 +9,33 @@ public class Blender {
         speed = 0;
     }
 
-    public boolean isFull() {
+    @Override
+    public boolean IsFull(){
         return full;
     }
-
-    public void setIsFull(boolean full) {
-        this.full = full;
-    }
-
-    public int getSpeed() {
+    
+    @Override
+    public int GetSpeed(){
         return speed;
     }
 
-    public void setSpeed(int speed) {
-        this.speed = speed;
+    @Override
+    public void SpeedUp(){
+        speed++;
     }
 
+    @Override
+    public void Fill(){
+        full = true;
+    }
 
+    @Override
+    public void Empty(){
+        full = false;
+    }
 
+    @Override
+    public void SpeedDown(){
+        speed--;
+    }
 }
