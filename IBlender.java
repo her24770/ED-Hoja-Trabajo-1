@@ -1,4 +1,6 @@
-
+/*
+ * IInterfaz para la clase Blender
+ */
 public interface IBlender {
     void SpeedUp();
     boolean IsFull();
