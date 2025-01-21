@@ -1,19 +1,20 @@
 
 public class Blender {
-    private boolean isOn;
+
+    private boolean full;
     private int speed;
 
     public Blender() {
-        isOn = false;
+        full = false;
         speed = 0;
     }
 
-    public boolean isOn() {
-        return isOn;
+    public boolean isFull() {
+        return full;
     }
 
-    public void setOn(boolean isOn) {
-        this.isOn = isOn;
+    public void setIsFull(boolean full) {
+        this.full = full;
     }
 
     public int getSpeed() {
@@ -23,4 +24,7 @@ public class Blender {
     public void setSpeed(int speed) {
         this.speed = speed;
     }
+
+
+
 }

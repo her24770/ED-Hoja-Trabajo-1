@@ -5,5 +5,5 @@ public interface IBlender {
     void Fill();
     void Empty();
     void SpeedDown();
-    int GetSSpeed();
+    int GetSpeed();
 }
