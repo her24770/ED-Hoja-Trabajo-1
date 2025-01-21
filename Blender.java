@@ -1,4 +1,6 @@
-
+/**
+ * Representacion de la licuadora con todas las funciones que puede realizar
+ */
 public class Blender implements IBlender{
 
     private boolean full;
@@ -21,7 +23,9 @@ public class Blender implements IBlender{
 
     @Override
     public void SpeedUp(){
-        speed++;
+        if (speed != 9){
+            speed++;
+        }
     }
 
     @Override
@@ -36,6 +40,8 @@ public class Blender implements IBlender{
 
     @Override
     public void SpeedDown(){
-        speed--;
+        if (speed >= 0){
+            speed--;
+        }
     }
 }
