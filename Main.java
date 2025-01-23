@@ -3,7 +3,7 @@
  *
  * @author Josue Hernández - 24770
  * @author Gabriel Hidalgo - 24939
- * @author Oscar Rompich - 24
+ * @author Oscar Rompich - 24880
  * 
  * @version 1.0
  * @since 2025-01-20
