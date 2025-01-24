@@ -69,12 +69,29 @@ public class Main {
 
                 case 3:
 
+                if (blender.IsFull() == false) {
                     blender.Fill();
+                    System.out.println("La licuadora ha sido llenada");
+                
+                } else {
+                    System.out.println("La licuadora ya estaba llena");
 
+                }           
+                
                     break;  
                     
                 case 4:
-                    blender.Empty();
+
+                    if (blender.IsFull() == true) {
+                        blender.Empty();
+                        System.out.println("La licuadora ha sido vaciada");
+
+                    } else {
+                        
+                        System.out.println("La licuadora ya estaba vacía");
+                    }
+
+
                     break;
 
                 case 5:
