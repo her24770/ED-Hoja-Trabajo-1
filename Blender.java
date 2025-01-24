@@ -35,7 +35,10 @@ public class Blender implements IBlender{
 
     @Override
     public void Empty(){
-        full = false;
+        if (speed == 0){
+            full = false;
+        }
+         
     }
 
     @Override

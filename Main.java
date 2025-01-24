@@ -81,3 +81,6 @@ public class Main {
         sc.close();
     }
 }
+
+//no se puede vaciar si no se para o reibnia la velocidad
+//protected ?
